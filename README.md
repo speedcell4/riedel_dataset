@@ -15,7 +15,7 @@ cd data
 ln -s <path>/ecml/heldout_relations .
 ln -s <path>/ecml/kb_manual .
 ln -s <path>/ecml/nyt-2005-2006.backup .
-ln -s <path>/ecml/~/data/iesl.cs.umass.edu/riedel/ecml/filtered-freebase-simple-topic-dump-3cols.tsv .
+ln -s <path>/ecml/filtered-freebase-simple-topic-dump-3cols.tsv .
 cd ..
 bash run.bash
 ```
