@@ -6,8 +6,8 @@ bash convert.bash 1
 cd ../python
 bash convert.bash 1
 
-cd ../java
-bash convert.bash 0
+#cd ../java
+#bash convert.bash 0
 
 cd ../../
 cat ./data/heldout_relations/trainPositive.tsv >> ./data/train1.txt
@@ -20,5 +20,5 @@ cat ./data/kb_manual/trainNegative.tsv >> ./data/train1.txt
 
 #cd src/python
 #bash convert.bash 0
-#python generate_train.py
+python generate_train.py
 #rm ../../data/train1.txt
