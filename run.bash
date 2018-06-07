@@ -10,15 +10,15 @@ bash convert.bash 1
 #bash convert.bash 0
 
 cd ../../
-cat ./data/heldout_relations/trainPositive.tsv >> ./data/train1.txt
-cat ./data/heldout_relations/trainNegative.tsv >> ./data/train1.txt
-cat ./data/heldout_relations/testPositive.tsv >> ./data/test.txt
-cat ./data/heldout_relations/testNegative.tsv >> ./data/test.txt
+cat ./data/heldout_relations/trainPositive.tsv >> ./data/train1.tsv
+cat ./data/heldout_relations/trainNegative.tsv >> ./data/train1.tsv
+cat ./data/heldout_relations/testPositive.tsv >> ./data/test.tsv
+cat ./data/heldout_relations/testNegative.tsv >> ./data/test.tsv
 
-cat ./data/kb_manual/trainPositive.tsv >> ./data/train1.txt
-cat ./data/kb_manual/trainNegative.tsv >> ./data/train1.txt
+cat ./data/kb_manual/trainPositive.tsv >> ./data/train1.tsv
+cat ./data/kb_manual/trainNegative.tsv >> ./data/train1.tsv
 
 cd src/python
 #bash convert.bash 0
 python generate_train.py
-#rm ../../data/train1.txt
+#rm ../../data/train1.tsv

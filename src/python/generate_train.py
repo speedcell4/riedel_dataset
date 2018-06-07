@@ -1,7 +1,7 @@
 test = set()
 
 print('reading test data')
-with open('../../data/test.txt', 'r') as f:
+with open('../../data/test.tsv', 'r') as f:
     while True:
         content = f.readline()
         if content == '':
@@ -11,8 +11,8 @@ with open('../../data/test.txt', 'r') as f:
         test.add(pair)
 
 print('reading train data')
-with open('../../data/train1.txt', 'r') as f:
-    with open('../../data/train.txt', 'w') as d:
+with open('../../data/train1.tsv', 'r') as f:
+    with open('../../data/train.tsv', 'w') as d:
         while True:
             content = f.readline()
             if content == '':
