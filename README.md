@@ -4,8 +4,8 @@ convert the [Riedel Dataset](http://iesl.cs.umass.edu/riedel/ecml/).
 
 ## requeiments
 
-* bash 4.2
-* python 3.6
+* bash 4.4
+* python 2.7.14
 * `python -m pip install -r requirements.txt`
 
 ## usage
