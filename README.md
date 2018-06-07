@@ -2,7 +2,7 @@
 
 convert the [Riedel Dataset](http://iesl.cs.umass.edu/riedel/ecml/).
 
-## requeiments
+## requirement
 
 * bash 4.4
 * python 2.7.14
