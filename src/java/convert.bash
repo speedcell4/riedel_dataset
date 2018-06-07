@@ -16,7 +16,7 @@ fi
 
 if [ $1 -eq 0 ]
 then
-  echo "deleting converted data"
+  echo "java deleting converted data"
   rm -rf ../../data/kb_manual/trainPositive
   rm -rf ../../data/kb_manual/trainNegative
 
@@ -25,7 +25,7 @@ then
   rm -rf ../../data/heldout_relations/testPositive
   rm -rf ../../data/heldout_relations/testNegative  
 else
-  echo "converting data"
+  echo "java converting data"
   javac -cp ":./protobuf-java-2.6.1.jar" RelationReader.java 
   #convert all files
   convert ../../data/kb_manual/trainPositive.pb

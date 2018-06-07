@@ -13,7 +13,7 @@ fi
 
 if [ $1 -eq 0 ]
 then
-  echo "deleting converted data"
+  echo "python deleting converted data"
   rm -rf ../../data/kb_manual/trainPositive.tsv
   rm -rf ../../data/kb_manual/trainNegative.tsv
 
@@ -22,7 +22,7 @@ then
   rm -rf ../../data/heldout_relations/testPositive.tsv
   rm -rf ../../data/heldout_relations/testNegative.tsv
 else
-  echo "converting data"
+  echo "python converting data"
   #convert all files
   convert ../../data/kb_manual/trainPositive/ ../../data/filtered-freebase-simple-topic-dump-3cols.tsv 
   convert ../../data/kb_manual/trainNegative/ ../../data/filtered-freebase-simple-topic-dump-3cols.tsv

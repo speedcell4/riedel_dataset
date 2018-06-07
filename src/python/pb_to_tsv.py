@@ -4,6 +4,7 @@ import os
 import codecs
 import unicodecsv
 
+
 def create_guid_dict(file_name):
     '''
     Create a dictionary with guids as key and entity name as value
@@ -28,9 +29,10 @@ def guid_to_mid(guid):
     guid = guid.split('/')[-1]
     # remove 9202a8c04000641f8
     guid = guid[17:]
-    i = int(guid,16)
+    i = int(guid, 16)
     mid = 'm.0' + str(base32(i))
     return mid
+
 
 input_dir = sys.argv[1]
 file_list = os.listdir(input_dir)
@@ -55,15 +57,15 @@ for file_name in file_list:
     sourceId = guid_to_mid(sourceId)
     destId = guid_to_mid(destId)
     for mention in rel.mention:
-    	e1_name_new = e1_name.replace(' ', '_')
-    	e2_name_new = e2_name.replace(' ', '_')
+        e1_name_new = e1_name.replace(' ', '_')
+        e2_name_new = e2_name.replace(' ', '_')
 
         sentence = mention.sentence
         sentence = sentence.replace(e1_name, e1_name_new)
         sentence = sentence.replace(e2_name, e2_name_new)
 
         types = mention.feature[0].split('->')
-        
-        f_write.writerow([sourceId, destId, e1_name_new.lower(), e2_name_new.lower(), 
-        	types[0], types[1], relation, sentence.lower()])
+
+        f_write.writerow([sourceId, destId, e1_name_new.lower(), e2_name_new.lower(),
+                          types[0], types[1], relation, sentence.lower()])
     f.close()
