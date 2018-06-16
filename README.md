@@ -1,4 +1,4 @@
-# riedel_dataset
+# Riedel Dataset
 
 convert the [Riedel Dataset](http://iesl.cs.umass.edu/riedel/ecml/).
 
